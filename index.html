@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind css</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+
+    tailwind.config = {
+      theme: {
+        
+        screens: {
+            'sm': { 'min': '500px', 'max': '767px' },
+            // => @media (min-width: 640px and max-width: 767px) { ... }
+
+            'md': { 'min': '768px', 'max': '1023px' },
+            // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+            'lg': { 'min': '1024px', 'max': '1279px' },
+            // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+            'xl': { 'min': '1280px', 'max': '1535px' },
+            // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+            '2xl': { 'min': '1536px' },
+            // => @media (min-width: 1536px) { ... }
+          },
+        extend: {
+          
+          screens: {
+        'xsm':{'min':'300px','max':'500px'},
+        // => @media (min-width: 992px) { ... }
+      },
+          colors: {
+            'clifford': '#da373d',
+            'white': '#ffffff',
+      'purple': '#3f3cbb',
+      'midnight': '#121063',
+      'metal': '#565584',
+      'tahiti': '#3ab7bf',
+      'silver': '#ecebff',
+      'bubble-gum': '#ff77e9',
+      'bermuda': '#78dcca',
+          },
+          fontSize: {
+            '2xl': '1.75rem',
+            '3xl': '3rem',
+            '10xl': '10rem',
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+  <!-- <h1 class="text-3xl lg:text-center py-2 sm:text-right text-clifford lg:py-8 xsm:text-center">Eman ali</h1> -->
+   <h1 class="text-5xl text-center mt-4 text-metal">Top1 Digital Marketing</h1>
+</div>
+</body>
+
+
+</html>

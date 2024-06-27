@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'sm': { 'min': '640px', 'max': '767px' },
+          // => @media (min-width: 640px and max-width: 767px) { ... }
+
+          'md': { 'min': '768px', 'max': '1023px' },
+          // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+          'lg': { 'min': '1024px', 'max': '1279px' },
+          // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+          'xl': { 'min': '1280px', 'max': '1535px' },
+          // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+          '2xl': { 'min': '1536px' },
+          // => @media (min-width: 1536px) { ... }
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!-- <div class="max-w-[1200px]  text-white mx-auto grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 py-5">
+    <div class="bg-purple-500 py-5 text-center col-span-2 w-[400px]">This will ensure your grid layout works as expected with the specified column configurations for different screen sizes.</div>
+    <div class="bg-purple-500 py-5 text-center row-span-2">This will ensure your grid layout works as expected with the specified column configurations for different screen sizes.</div>
+    <div class="bg-purple-500 py-5 text-center">This will ensure your grid layout works as expected with the specified column configurations for different screen sizes.</div>
+    <div class="bg-purple-500 py-5 text-center">This will ensure your grid layout works as expected with the specified column configurations for different screen sizes.</div>
+    <div class="bg-purple-500 py-5 text-center">This will ensure your grid layout works as expected with the specified column configurations for different screen sizes.</div>
+    <div class="bg-purple-500 py-5 text-center">This will ensure your grid layout works as expected with the specified column configurations for different screen sizes.</div>
+    <div class="bg-purple-500 py-5 text-center">This will ensure your grid layout works as expected with the specified column configurations for different screen sizes.</div>
+    <div class="bg-purple-500 py-5 text-center">This will ensure your grid layout works as expected with the specified column configurations for different screen sizes.</div> -->
+<!-- row -->
+ <h1 class="bg-purple-900 text-white text-center py-5 w-[1200px] mx-auto text-[20px]">WellCome Eman Ali</h1>
+    <div class="max-w-[600px] mx-auto grid lg: grid-rows-3  grid-flow-col  gap-4 my-4 ">
+      <div class="bg-red-700 text-white row-span-2">HELOO</div>
+      <div class="bg-red-700 text-white">HELOO</div>
+      <div class="bg-red-700 text-white">HELOO</div>
+      <div class="bg-red-700 text-white">HELOO</div>
+      <div class="bg-red-700 text-white">HELOO</div>
+      <div class="bg-red-700 text-white">HELOO</div>
+      <div class="bg-red-700 text-white">HELOO</div>
+      <div class="bg-red-700 text-white">HELOO</div>
+    </div>
+  </div>
+</body>
+
+</html>
